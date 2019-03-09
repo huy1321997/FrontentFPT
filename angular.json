@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "front-end": {
+    "FrontendFPT": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/front-end",
+            "outputPath": "dist/FrontendFPT",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,12 +23,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/nova-light/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ],
+            "scripts": [],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "front-end:build"
+            "browserTarget": "FrontendFPT:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "front-end:build:production"
+              "browserTarget": "FrontendFPT:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "front-end:build"
+            "browserTarget": "FrontendFPT:build"
           }
         },
         "test": {
@@ -85,9 +85,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-              
-            ],
+            "scripts": [],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -108,7 +106,7 @@
         }
       }
     },
-    "front-end-e2e": {
+    "FrontendFPT-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -117,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "front-end:serve"
+            "devServerTarget": "FrontendFPT:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "front-end:serve:production"
+              "devServerTarget": "FrontendFPT:serve:production"
             }
           }
         },
@@ -137,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "front-end"
+  "defaultProject": "FrontendFPT"
 }
