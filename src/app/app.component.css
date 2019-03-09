@@ -1,0 +1,63 @@
+.lblTotalJob{
+    color: #43a125;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arial;
+    margin-left: 15px;
+    margin-top: 0px;
+}
+.special_heading
+{
+   
+    color: red;
+    padding-left: 10px;
+}
+.btn-border-orange {
+    border-color: #f37021;
+    color: #f37021;
+}
+.btn {
+  border: 1px solid;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0.3em 1.4em;
+  margin-top:20px;
+  font-size: 15px;
+  margin-left: 3px;
+  background-color: #51b64b;
+  color:white;
+    
+}
+.timkiemnangcao
+{
+    margin-top: 5px;
+    color: inherit;
+    float:right;
+}
+.action
+{
+    float: right;
+    border: 1px solid;
+    color: red;
+    padding: 0.3em 1.4em;
+}
+.item
+{
+    background: #f9f9f9;
+    border: 1px solid blue;
+    margin-top: 3px;
+}
+.jobs-more 
+{
+    margin-top: 10px;
+    border: 1px solid forestgreen;
+    text-align: center;
+    padding: .6666em 1.4em;
+    color: #51b64b;
+    
+}
+.span
+{
+    line-height: 1.2em;
+}
