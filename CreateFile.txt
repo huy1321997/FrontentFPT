@@ -1,0 +1,5 @@
+// create component
+ng g c components/homes/home
+
+//create service
+ng g s services/level/level
