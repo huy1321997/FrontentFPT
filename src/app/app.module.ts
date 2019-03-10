@@ -12,7 +12,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SearchComponent } from './components/search/search.component';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http'
     HeaderComponent,
     BodyComponent,
     FooterComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +32,7 @@ import { HttpClientModule } from '@angular/common/http'
     FieldsetModule,
     InputTextModule,
     HttpClientModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],

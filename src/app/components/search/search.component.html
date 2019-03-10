@@ -1,0 +1,28 @@
+<div class="search-jobs-form">
+  <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <div class="ui-g">
+          <div class="ui-g-4">
+              <input type="text" pInputText placeholder="keywork" formControlName="skill" style="width: 90%">
+          </div>
+          <div class="ui-g-3">
+              <select id="country" formControlName="location" style="width: 90%; height: 34px; border-radius: 3px">
+                  <option value="" hidden>Locations</option>
+                  <option *ngFor="let location of locations" [ngValue]="location">{{ location }}</option>
+              </select>
+          </div>
+          <div class="ui-g-3">
+              <select id="country" formControlName="location" style="width: 90%;height: 34px; border-radius: 3px">
+                  <option value="" hidden>Skills</option>
+                  <option *ngFor="let location of locations" [ngValue]="location">{{ location }}</option>
+              </select>
+          </div>
+          <div class="ui-g-2">
+              <button pButton type="submit" label="Search" class="ui-button-warning"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
